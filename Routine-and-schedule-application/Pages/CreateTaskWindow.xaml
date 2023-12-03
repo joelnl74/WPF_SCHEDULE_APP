@@ -1,0 +1,22 @@
+﻿<Window x:Class="Routine_and_schedule_application.Pages.CreateTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Routine_and_schedule_application.Pages"
+        mc:Ignorable="d"
+        Title="CreateTaskWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Grid.RowSpan="2" Grid.ColumnSpan="6" Grid.Row="2" Name="sp1">
+            <TextBox Text="Name"></TextBox>
+            <TextBox Text="Description"></TextBox>
+            <Button Name="create_button" Content="Create"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
